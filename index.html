@@ -4,11 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="/Pagina1/cherry-blossom.ico"/>
+    <link rel="icon" href="/Pagina1/favicon/cherry-blossom.ico" />
+    <!--Icono de la ventana del navegador -->
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <!--Relacionar css con html -->
     <title>Pagina piola</title>
 </head>
 
 <body>
+
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Mi perfil</li>
+            <li>Galeria</li>
+            <li>Mis proyectos</li>
+        </ul>
+    </nav>
+
     <h1 title="Holis, bienvenido" dir="rtl">HOLAAAAA BROOO</h1>
 
     <div id="bloque1">
@@ -23,8 +36,6 @@
 
     <p style="background: darkslateblue; color: tomato;">
         <span translate="no">We translate a paragraph</span>
-        <br>
-        <a href="https://github.com/shoioo">Mi Github</a>
     </p>
 
     <form>
@@ -32,6 +43,216 @@
         <input accesskey="H" placeholder="Apellido (ALT+H)" />
         <input accesskey="N" placeholder="Nombre (ALT+N)" />
     </form>
+
+    <p>
+        <q cite="http://www.imdb.com/title/tt0468569/">
+            Hay hombres que solo quieren ver arder el mundo.
+        </q>
+    </p>
+
+    <p>
+        El término <dfn> <abbr title="Kilómetro"> Km </abrr> </dfn> es una unidad de longitud.
+    </p>
+
+
+    <p>Pulsa las teclas <kbd>CTRL</kbd>+<kbd>T</kbd>...
+        <style>
+            kbd {
+                font-family: "Victor Mono", monospace;
+                padding: 2px 6px;
+                background: #eee;
+                border: 3px solid #bbb;
+                border-top-width: 1px;
+                border-bottom: 3px solid #777;
+            }
+        </style>
+    </p>
+
+    <p>
+        <time datetime="2001-01-04">4 de Enero</time>
+        <data value="ESDLA3">El retorno del Rey</data>
+    </p>
+
+    <ul>
+        <li>Yae Miko</li>
+        <li>Diluc</li>
+        <li>Shogun Raiden</li>
+        <li>Qiqi</li>
+        <li>Kaeya</li>
+        <li>Zhogli</li>
+    </ul>
+
+    <div>
+        <dl>
+            <dt>Yae Miko</dt>
+            <dd>Sacerdotiza</dd>
+            <dd>Kitsune, astuta</dd>
+
+            <dt>Shogun Raiden</dt>
+            <dd>Arconte Electro</dd>
+            <dd>Lider, Promesa de eternidad</dd>
+        </dl>
+
+        <figure>
+            <img src="/Pagina1/Imagenes/1204945.jpg" height="350" width="600" alt="Yae Miko">
+            <figcaption>Imagen del personaje de Genshin Impact, Yae Miko</figcaption>
+        </figure>
+    </div>
+
+    <div>
+        <ul>
+            <li><a href="https://github.com/shoioo">Mi Github</a></li>
+            <li><a href="http://lenguajecss.com/" target="_blank">LenguajeCSS</a></li>
+            <li><a href="/Pagina1/Documentos/CV-HusseinShaila.pdf" download="Micv.pdf">PDF</a></li>
+            <li><a href="/Pagina1/Documentos/CV-HusseinShaila.pdf" hreflang="en">PDF</a></li>
+        </ul>
+    </div>
+
+    <style>
+        /* Cambios sobre la propia tabla */
+        table {
+            border-collapse: collapse;
+            border: 1px solid #ccc;
+        }
+
+        /* Espacio de relleno en celdas y cabeceras */
+        td,
+        th {
+            padding: 10px;
+        }
+
+        /* Modificación de estilos en cabeceras */
+        th {
+            background: #000;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        /* Modificación de estilos en celdas */
+        td {
+            text-align: center;
+            border-bottom: 2px solid #111;
+            color: #333;
+            font-size: 18px;
+        }
+    </style>
+
+    <table>
+        <!-- Cabecera -->
+        <tr>
+            <th>Título columna 1</th>
+            <!-- Celda de cabecera de la columna 1 -->
+            <th>Título columna 2</th>
+            <!-- Celda de cabecera de la columna 2 -->
+            <th>Título columna 3</th>
+            <!-- Celda de cabecera de la columna 3 -->
+        </tr>
+        <!-- Primera fila -->
+        <tr>
+            <td>Celda 1x1</td>
+            <!-- Primera celda de la primera fila -->
+            <td>Celda 2x1</td>
+            <!-- Segunda celda de la primera fila -->
+            <td>Celda 3x1</td>
+            <!-- Tercera celda de la primera fila -->
+        </tr>
+        <!-- Segunda fila -->
+        <tr>
+            <td>Celda 1x2</td>
+            <!-- Primera celda de la segunda fila -->
+            <td>Celda 2x2</td>
+            <!-- Segunda celda de la segunda fila -->
+            <td>Celda 3x2</td>
+            <!-- Tercera celda de la segunda fila -->
+        </tr>
+    </table>
+
+    <style>
+        td {
+            border: 1px solid black;
+        }
+    </style>
+
+    <table>
+        <!-- ... -->
+        <tr>
+            <td colspan="3">Datos adicionales</td>
+            <!-- Abarca 3 celdas -->
+        </tr>
+        <!-- Primera fila -->
+        <tr>
+            <td>Celda 1x1</td>
+            <!-- Primera celda de la primera fila -->
+            <td>Celda 2x1</td>
+            <!-- Segunda celda de la primera fila -->
+            <td>Celda 3x1</td>
+            <!-- Tercera celda de la primera fila -->
+        </tr>
+        <!-- ... -->
+    </table>
+
+    <p>Otra tabla con convinacion vertical (rowspan)</p>
+
+    <table>
+        <tr>
+            <td colspan="4">Hola</td>
+        </tr>
+        <tr>
+            <td rowspan="4">Nose que es esto</td>
+        </tr>
+        <tr>
+            <th>Alumno 1</th>
+            <th>Columna 1</th>
+            <th>Columna 1</th>
+        </tr>
+        <tr>
+            <th>Alumno 2</th>
+            <th>Columna 2</th>
+            <th>Columna 2</th>
+        </tr>
+        <tr>
+            <th>Alumno 3</th>
+            <th>Columna 3</th>
+            <th>Columna 3</th>
+        </tr>
+    </table>
+
+    <div>
+        <p>Esta es otra tabla organizada</p>
+
+        <table>
+            <!-- Table footer: pie de la tabla (tfoot) -->
+            <tfoot>
+                <tr>
+                    <td>Pie de tabla 1</td>
+                    <td>Pie de tabla 2</td>
+                </tr>
+            </tfoot>
+            <!-- Table header: cabecera de la tabla (thead) -->
+            <thead>
+                <tr>
+                    <th>Columna 1</th>
+                    <th>Columna 2</th>
+                </tr>
+            </thead>
+            <!-- Table body: cuerpo de la tabla (tbody) -->
+            <tbody>
+                <tr>
+                    <td>Celda 1</td>
+                    <td>Celda 2</td>
+                </tr>
+            </tbody>
+            <!-- Leyenda o título de la tabla -->
+            <caption>
+                Título de la tabla
+            </caption>
+        </table>
+    </div>
+
+    <footer>
+        <p>Gracias por visitar mi primera pagina web</p>
+    </footer>
+
 </body>
 
 </html>
