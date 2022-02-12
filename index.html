@@ -215,6 +215,7 @@
             <th>Columna 3</th>
             <th>Columna 3</th>
         </tr>
+
     </table>
 
     <div>
@@ -249,9 +250,69 @@
         </table>
     </div>
 
+    <div>
+        <p>Organizar por columnas</p>
+        <table>
+            <tr>
+                <th>Columna 1</th>
+                <th>Columna 2</th>
+                <th>Columna 3</th>
+                <th>Columna 4</th>
+            </tr>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>NULL</td>
+            </tr>
+            <tr>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+                <td>NULL</td>
+            </tr>
+            <colgroup>
+                <col style="background:red">
+                <col span="2" style="background: greenyellow;">
+                <col style="background: darkviolet;">
+            </colgroup>
+        </table>
+    </div>
+
+    <!--    <div>
+        <p>Etiquetas de imagenes</p>
+
+        <picture>
+            <source srcset="/Pagina1/Imagenes/EdcS6YUU4AA3ST0.WebP"/> primero intenta con esta imagen
+             Formato WebP 
+            <source srcset="/Pagina1/Imagenes/EdcS6YUU4AA3ST0.JPEG"/> si no puede con la anterior intenta con esta
+             Formato JPEG XR 
+            <img src="/Pagina1/Imagenes/EdcS6YUU4AA3ST0.jpg" height="350" width="600" alt="Descripción de la imagen"/> ...en caso de fallo 
+            de las 2 anteriores...
+             Fallback 
+          </picture>
+    </div>
+-->
+
+    <br>
+
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pkah2WNiI2Y" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
     <footer>
         <p>Gracias por visitar mi primera pagina web</p>
     </footer>
+
+    <div>
+        <p>Esto es un video</p>
+
+      <!-- <video src="/Pagina1/Videos/Video_Anime.webm" width="640" height="480"></video> -->
+       <video src="/Pagina1/Videos/Video_Anime.webm" width="640" height="480"  poster="/Pagina1/Imagenes/EdcS6YUU4AA3ST0.jpg"controls></video>
+    </div>
 
 </body>
 
