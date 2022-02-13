@@ -303,15 +303,106 @@
             allowfullscreen></iframe>
     </div>
 
+    <div>
+        <p>Esto es un video</p>
+        <!-- <video src="/Pagina1/Videos/Video_Anime.webm" width="640" height="480"></video> -->
+        <video src="/Pagina1/Videos/Video_Anime.webm" width="640" height="480"
+            poster="/Pagina1/Imagenes/EdcS6YUU4AA3ST0.jpg" controls></video>
+    </div>
+
     <footer>
         <p>Gracias por visitar mi primera pagina web</p>
     </footer>
 
     <div>
-        <p>Esto es un video</p>
+        <p>Formulario WIIIII</p>
 
-      <!-- <video src="/Pagina1/Videos/Video_Anime.webm" width="640" height="480"></video> -->
-       <video src="/Pagina1/Videos/Video_Anime.webm" width="640" height="480"  poster="/Pagina1/Imagenes/EdcS6YUU4AA3ST0.jpg"controls></video>
+        <form name="formulario" method="post" action="/send.php">
+            <input type="text" name="nombre" value="" placeholder="Nombre" />
+            <input type="submit" value="Enviar" />
+        </form>
+
+        <form name="formulario" method="post" action="/send.php">
+            <!-- Area de texto extensa -->
+            <textarea name="texto" cols="80" rows="10" placeholder="Escribe aquí el texto...">
+              Este es el valor por defecto
+            </textarea>
+        </form>
+
+        <p>Que tal es mi pagina?</p>
+        <form>
+            <input type="range" />
+        </form>
+
+        <p>Fecha</p>
+        <form>
+            <input type="date" />
+        </form>
+
+        <form name="formulario" method="post" action="/send.php">
+            <!-- Botones de opción -->
+            <p>
+                Sexo:
+                <input type="radio" name="sexo" value="H" /> Hombre
+                <input type="radio" name="sexo" value="M" /> Mujer
+            </p>
+
+            <!-- Casillas de verificación (marcada por defecto) -->
+            <input type="checkbox" name="empresa" checked />
+            ¿Eres autónomo/empresa?
+        </form>
+
+        <form>
+            <p>Califique mi pagina</p>
+            <select name="combo">
+                <option value="1">La mejor pagina</option>
+                <option value="2" selected>10/10</option>
+                <option value="3">Una genialidad</option>
+            </select>
+        </form>
+
+        <form>
+            <p>Seleccion de colores</p>
+
+            <form name="formulario" method="post" action="http://pagina.com/send.php">
+                <!-- Selección de color -->
+                Selecciona el color deseado:
+                <!-- Color verde por defecto HEX(1B, F4, 4A) -->
+                <input type="color" name="color" value="#1BF44A" />
+            </form>
+        </form>
+
+        <form name="formulario" method="post" action="/send.php" enctype="multipart/form-data">
+            <!-- ¡No olvides el enctype! -->
+            <!-- Campo de selección de archivo -->
+            <input type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple />
+        </form>
+
+        <form name="formulario" method="post" action="/send.php">
+            <!-- Agrupación de campos -->
+            <fieldset>
+                <legend>Datos personales</legend>
+
+                <!-- Campo de texto -->
+                <label>
+                    Nombre de usuario:
+                    <input type="text" name="nombre" placeholder="Por ej: John Smith" />
+                </label>
+                <!-- Campo numérico -->
+                Edad:
+                <input type="number" name="edad" min="18" max="100" placeholder="18" />
+
+                <!-- Botón radio de opción -->
+                Sexo:
+                <!-- Primera opción -->
+                <input type="radio" name="sexo" value="H" /> Hombre
+                <!-- Segunda opción -->
+                <input type="radio" name="sexo" value="M" /> Mujer
+            </fieldset>
+
+            <button onClick="alert('¡Hola brooo!')">Saludar</button>
+        </form>
+
     </div>
 
 </body>
